@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="promo_card_header_text_color">@color/background_dialer_white</color>
+    <color name="promo_card_details_text_color">@color/background_dialer_white</color>
+</resources>
