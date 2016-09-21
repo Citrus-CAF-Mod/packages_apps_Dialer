@@ -71,6 +71,8 @@
     
     <!-- For enrich call -->
     <uses-permission android:name="com.qualcomm.qti.internal.permission.ACCESS_ENRICHED_CALL" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
 
     <application
         android:name="DialerApplication"
@@ -351,6 +353,10 @@
             <intent-filter>
                 <action android:name="android.telecom.InCallService"/>
             </intent-filter>
+        </service>
+
+        <service android:name="com.android.services.callrecorder.CallRecorderService"
+                 android:process="com.android.incallui">
         </service>
 
         <!-- BroadcastReceiver for receiving Intents from Notification mechanism. -->
